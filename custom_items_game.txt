@@ -1171,12 +1171,12 @@
 				"max pipebombs decreased"
 				{
 					"attribute_class"	"add_max_pipebombs"
-					"value" 			"-2"
+					"value" 			"-4"
 				}
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" 			"0.75"
+					"value" 			"0.5"
 				}
 				"custom projectile model"
 				{
@@ -1898,6 +1898,11 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"3.0"
 				}
+				"weapon_stattrak_module_scale"															
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.2"
+				}
 				"max health additive penalty"											
 				{
 					"attribute_class"	"add_maxhealth"
@@ -1921,7 +1926,7 @@ Weapon by: 'The One Of Wonders'"
                 "mult shield bash damage"
 				{
 					"attribute_class"	"mult_shield_bash_damage"
-					"value"				"0.7"				
+					"value"				"0.84"				
 				}					
 			}
 			"visuals"
@@ -4632,12 +4637,12 @@ Weapon by: 'The One Of Wonders'"
                 "weapon_stattrak_module_scale"												
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"				"1.4"
+					"value"				"1.2"
 				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_deploy_time"
-					"value"				"1.4"
+					"value"				"1.2"
 				}				
 			}
 			"visuals"
@@ -12931,7 +12936,7 @@ Weapon by: 'Vror'"
                 "blast splash damage decreased"
                 {
                     "attribute_class"    "mult_explosion_splash_damage"
-                    "value"                "0.8"
+                    "value"                "0.75"
                 }
                 "rocket whistle"
                 {
@@ -12951,7 +12956,7 @@ Weapon by: 'Vror'"
                 "custom falloff"
                 {
                     "attribute_class"    "mod_custom_falloff"
-                    "value"                "0.8"
+                    "value"                "0.85"
                 }
 				"custom projectile model"
 				{
@@ -18549,11 +18554,6 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mod_custom_rampup"
 					"value"				"1.5"
 				}	
-                "strange restriction type 1"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"0.03"
-				}
                 "custom projectile model"
 				{
 					"attribute_class"	"custom_projectile_model"
@@ -18762,6 +18762,11 @@ Weapon by: 'The One Of Wonders'"
 				}
 				"weapon_stattrak_module_scale"
 				{
+					"attribute_class"	"mult_spread_scale"
+					"value" 			"0.67"
+				}
+				"weapon_stattrak_module_scale"
+				{
 					"attribute_class"	"mult_reload_time"
 					"value" 			"1.2"
 				}
@@ -18778,7 +18783,7 @@ Weapon by: 'The One Of Wonders'"
 				"punch angle mod add hidden"
 				{
 					"attribute_class"	"punch_angle_mod"
-					"value"				"6.67"
+					"value"				"3.335"
 				}
 				"punch angle mod add hidden"
 				{
@@ -22230,6 +22235,11 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_explosion_radius"
 					"value"				"1.2"
 				}
+				"mod crit airborne"
+                {
+                    "attribute_class"    "crit_airborne"
+                    "value"                "1"
+                }
 				"Rainmaker Payload"
                 {
                     "attribute_class"    "dummi"
@@ -22238,7 +22248,7 @@ Weapon by: 'The One Of Wonders'"
 				"blast splash damage decreased"
 				{
 					"attribute_class"	"mult_explosion_splash_damage"
-					"value"				"0.75"
+					"value"				"0.8"
 				}
 				"strange restriction type 1"													
 				{
@@ -27380,7 +27390,7 @@ Weapon from: 'The One Of Wonders'"
 Keep away from face... my face? or theirs?
 
 Model by: 'Svdl'
-Weapon by: 'Vror'"					
+Weapon by: 'The One Of Wonders'"					
 			"item_logname"				"Blood Boiler"
 			"item_iconname"				"Blood Boiler"
 			"image_inventory"			"backpack/weapons/c_models/c_weldkit/c_weldkit"
@@ -27398,20 +27408,30 @@ Weapon by: 'Vror'"
 					"attribute_class"	"dmmuy"
 					"value"				"1"
 				}
-				"damage bonus"													
+				"flame size bonus"
 				{
-					"attribute_class"	"mult_dmg"
-					"value"				"1.1"
-				}			
+					"attribute_class"	"mult_flame_size"
+					"value"				"1.15"
+				}
 				"Flame Range Increased"
 				{
 					"attribute_class"	"mult_flame_velocity"
-					"value"				"1.1"
+					"value"				"1.5"
 				}
-				"flame size penalty"
+				"weapon burn dmg increased"
 				{
-					"attribute_class"	"mult_flame_size"
-					"value"				"0.01"
+					"attribute_class"	"mult_wpn_burndmg"
+					"value"				"1.66"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.5"
+				}
+				"weapon burn time reduced"
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"0.5"
 				}
 				"strange restriction type 1"
 				{
@@ -27477,7 +27497,7 @@ Weapon by: 'The One Of Wonders'"
 			    "flame size bonus"
 				{
 					"attribute_class"	"mult_flame_size"
-					"value"				"3.00"
+					"value"				"1.15"
 				}
 				"Flame Range Increased"
 				{
@@ -27538,7 +27558,6 @@ Weapon by: 'The One Of Wonders'"
 			"visuals"
 			{
 				"sound_reload"			"Weapon_FireHose.FireLoop"
-				"beam_effect"           "flamesentry"
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
@@ -32203,7 +32222,7 @@ Weapon by: 'The One Of Wonders'"
 				"damage penalty"													
 				{
 					"attribute_class"	"mult_dmg"
-					"value"				"0.4"
+					"value"				"0.5"
 				}
 				"clip size penalty"													
 				{
@@ -33999,7 +34018,11 @@ Weapon by: 'The One Of Wonders' 'Azzy'"
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.75"
 				}
-				
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.33"
+				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
@@ -35116,11 +35139,6 @@ Weapon by: 'The One Of Wonders'"
 			}
 			"attributes"																		
 			{
-			   "health regen"
-				{
-					"attribute_class"	"add_health_regen"
-					"value"				"10"
-				}
 				"cloak regen rate increased"
 				{
 					"attribute_class"	"mult_cloak_meter_regen_rate"
@@ -37765,6 +37783,11 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_dmg"
 					"value"				"2.0"
 				}
+				"weapon_stattrak_module_scale"													
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.67"
+				}
 				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_postfiredelay"
@@ -37775,11 +37798,17 @@ Weapon by: 'The One Of Wonders'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}
+				"strange restriction type 1"
+				{
+					"attribute_class"	"mod_always_draw_tracer_effect"
+					"value"				"1"
+				}
 			}
 			"visuals"
 			{
 				"sound_single_shot"		"Weapon_ScoutRevolver_Secondary.Single"
 				"sound_burst"			"Weapon_ScoutRevolver_Secondary.SingleCrit"
+				"tracer_effect"         "bullet_hunting_revolver_tracer01"
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
@@ -37944,17 +37973,17 @@ Weapon by: 'The One Of Wonders'"
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"				"1.2"
+					"value"				"1.1"
 				}
 				"Blast radius decreased"
 				{
 					"attribute_class"	"mult_explosion_radius"
-					"value"				"0.75"
+					"value"				"0.85"
 				}
 				"blast splash damage decreased"
 				{
 					"attribute_class"	"mult_explosion_splash_damage"
-					"value"				"0.67"
+					"value"				"0.75"
 				}
 				"custom projectile model"
 				{
@@ -39887,6 +39916,11 @@ Weapon by: 'Noclue'"
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}	
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.001"
+				}
 			}
 			"visuals"
 			{
@@ -39969,6 +40003,11 @@ Weapon ported by: 'Noclue'"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"				"0.66"
+				}
+				"damage force increase"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"				"1.34"
 				}
 				"crit mod disabled"
 				{
@@ -40118,7 +40157,7 @@ Weapon by: 'Noclue'"
 			
 			"propername"				"0"
 			"item_name"					"Sphere"
-			"item_type_name"			"Prototype Tesla Device"
+			"item_type_name"			"Prototype Shield Projector"
 			
 			"item_logname"				"Sphere"
 			"item_iconname"				"Sphere"
@@ -40146,9 +40185,14 @@ Weapon by: 'Noclue'"
 					"attribute_class"	"dummy"
 					"value"				"1"
 				}
-			    "Sphere Damage"
+			    "energy weapon no ammo"
 				{
-					"attribute_class"	"dummy"
+					"attribute_class"   "mod_ammo_per_shot"
+					"value"				"-1"
+				}
+				"strange restriction type 1"
+				{
+					"attribute_class"	"hide_ammo_hud"
 					"value"				"1"
 				}
 				"Sphere Mechanic"
@@ -40161,21 +40205,11 @@ Weapon by: 'Noclue'"
 					"attribute_class"	"custom_sphere"
 					"value"				"1.0"
 				}
-				"crits become minicrits"															
-				{
-					"attribute_class"	"crits_become_minicrits"
-					"value"				"1"
-				}
-				"Limited Range Dummy"
+				"Sphere Damage"
 				{
 					"attribute_class"	"dummy"
 					"value"				"1"
 				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"				"0"
-				}	
 				"hidden separator"
 				{
 					"attribute_class"	"hidden_separator"
@@ -40187,9 +40221,14 @@ Weapon by: 'Noclue'"
 					"attribute_class"	"mult_dmg"
 					"value"				"1.111111111"
 				}
-					"weapon_stattrak_module_scale"
+				"weapon_stattrak_module_scale"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.0"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_player_aiming_movespeed"
 					"value"				"0.75"
 				}
 				"bullet is a hull"
@@ -40227,8 +40266,8 @@ Weapon by: 'Noclue'"
 			"visuals"
 			{
 			    "sound_empty"           "Weapon_Laika.Spin"
-				"sound_double_shot"		"Weapon_Laika.Fire"	
-				"sound_burst"			"Weapon_Laika.FireCrit"	
+				"sound_double_shot"		"Weapon_Laika.Spin"
+				"sound_burst"			"Weapon_Laika.Spin"
 				"sound_single_shot"		"Weapon_Laika.SpinUp"
 				"sound_special2"		"Weapon_Laika.StopSpin"	
 				"sound_special3"		"Weapon_Laika.Spin"
@@ -41469,9 +41508,9 @@ Fan-Fire: Hold fire button for maximum destruction!"
 		"7588"
 		{
 			"name"					"Sphere Damage"
-			"description_string"	"Dealing damage with this weapon builds up shield energy"												
+			"description_string"	"This weapon cannot shoot or deal damage"												
 			"description_format"	"value_is_additive"
-			"effect_type"			"positive"
+			"effect_type"			"negative"
 		}
 		"7589"
 		{
